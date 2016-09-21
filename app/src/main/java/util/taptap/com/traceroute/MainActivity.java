@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         mText = (TextView) findViewById(R.id.text);
         mEditText = (EditText) findViewById(R.id.edit);
+        mEditText.setText("d.taptapdada.com");
         mBtn = (Button) findViewById(R.id.btn);
         mHandler = new Handler();
 
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String domin = mEditText.getText().toString();
+                builer = new StringBuilder();
                 if (!TextUtils.isEmpty(domin)) {
                     mBtn.setEnabled(false);
                     new Thread(new Runnable() {

@@ -37,8 +37,6 @@ JNIEXPORT void JNICALL beginTrace(JNIEnv *env, jobject object, jstring path){
     LOGD(domin);
     char * ret[] = {"tracepath", domin};
     traceroute(2, ret);
-
-    notifyUpdateToJava("from jni %d ", 2);
     LOGD(strerror(errno));
 //
 }
