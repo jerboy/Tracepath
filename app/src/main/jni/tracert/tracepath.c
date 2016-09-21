@@ -595,10 +595,12 @@ setsockopt(fd, SOL_IPV6, IPV6_2292HOPLIMIT, &on, sizeof(on))
 	if (hops_from>=0)
 		printf("back %d ", hops_from);
 	printf("\n");
+	notifyEnd();
 	return ;
 
 	pktlen_error:
 	fprintf(stderr, "Error: pktlen must be > %d and <= %d\n",
 			overhead, INT_MAX);
+	notifyEnd();
 	return ;
 }

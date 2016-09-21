@@ -1,7 +1,5 @@
 package taptap;
 
-import android.util.Log;
-
 public class Tracepath {
     static {
         System.loadLibrary("tracert");
@@ -16,13 +14,20 @@ public class Tracepath {
     public native void beginTrace(String path);
 
     public void callback(String update) {
-        Log.d("callback ", update + " " + Thread.currentThread().getName());
         if (null != mCallback) {
             mCallback.onUpdate(update);
         }
     };
 
+    public void end() {
+        if (null != mCallback) {
+            mCallback.onEnd();
+        }
+    }
+
     public  interface Callback{
         void onUpdate(String update);
+
+        void onEnd();
     }
 }

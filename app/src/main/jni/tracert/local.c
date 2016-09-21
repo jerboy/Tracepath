@@ -16,7 +16,9 @@ typedef struct {
 
     jclass kClass;
 
-    jmethodID  methodID;
+    jmethodID  updateMethodId;
+
+    jmethodID  endMethodId;
 
 } Nofication;
 
@@ -27,7 +29,8 @@ JNIEXPORT void JNICALL beginTrace(JNIEnv *env, jobject object, jstring path){
     nofication.g_Env = env;
 
     nofication.kClass = (*env)->FindClass(env, "taptap/Tracepath");
-    nofication.methodID = (*env)->GetMethodID(env, nofication.kClass, "callback", "(Ljava/lang/String;)V");
+    nofication.updateMethodId = (*env)->GetMethodID(env, nofication.kClass, "callback", "(Ljava/lang/String;)V");
+    nofication.endMethodId = (*env)->GetMethodID(env, nofication.kClass, "end", "()V");
 
     jboolean tmp = 1;
     const char * domin = (*env)->GetStringUTFChars(env, path, &tmp);
@@ -54,18 +57,16 @@ int notifyUpdateToJava(const char* logs, ...){
         LOGD(line);
         if (line){
             jstring value = (*nofication.g_Env)->NewStringUTF(nofication.g_Env, line);
-            (*nofication.g_Env)->CallVoidMethod(nofication.g_Env, nofication.gObject, nofication.methodID, value);
+            (*nofication.g_Env)->CallVoidMethod(nofication.g_Env, nofication.gObject, nofication.updateMethodId, value);
         }
         memset(line, 0, sizeof(line));
     }
 
-
     return ret;
-//    if (logs){
-//        LOGD(logs);
-//    }
-//
-//
+}
+
+void notifyEnd(){
+    (*nofication.g_Env)->CallVoidMethod(nofication.g_Env, nofication.gObject, nofication.endMethodId);
 }
 
 static const JNINativeMethod gMethods[] = {
