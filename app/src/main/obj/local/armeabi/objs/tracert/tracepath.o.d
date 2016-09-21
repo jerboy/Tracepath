@@ -1,4 +1,5 @@
-obj/local/armeabi/objs/tracert/tracepath.o: jni/tracert/tracepath.c \
+/Users/caojianbo/AndroidGame/Traceroute/app/src/main/obj/local/armeabi/objs/tracert/tracepath.o: \
+ /Users/caojianbo/AndroidGame/Traceroute/app/src/main/jni/tracert/tracepath.c \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/stdio.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/cdefs.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -50,13 +51,6 @@ obj/local/armeabi/objs/tracert/tracepath.o: jni/tracert/tracepath.c \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm/sockios.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/sockios.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/uio.h \
- /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/errqueue.h \
- /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/errno.h \
- /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/errno.h \
- /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm/errno.h \
- /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm-generic/errno.h \
- /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm-generic/errno-base.h \
- /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/netdb.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/netinet/in.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/endian.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/endian.h \
@@ -69,13 +63,23 @@ obj/local/armeabi/objs/tracert/tracepath.o: jni/tracert/tracepath.c \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/in6.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/ipv6.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/netinet/in6.h \
+ /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/netinet/icmp6.h \
+ /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/errqueue.h \
+ /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/errno.h \
+ /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/errno.h \
+ /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm/errno.h \
+ /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm-generic/errno.h \
+ /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm-generic/errno-base.h \
+ /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/netdb.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/resolv.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/param.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/param.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm/param.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/arpa/nameser.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/uio.h \
- /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/arpa/inet.h
+ /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/arpa/inet.h \
+ /Users/caojianbo/AndroidGame/Traceroute/app/src/main/jni/tracert/local.h \
+ /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/android/log.h
 
 /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/stdio.h:
 
@@ -179,20 +183,6 @@ obj/local/armeabi/objs/tracert/tracepath.o: jni/tracert/tracepath.c \
 
 /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/uio.h:
 
-/Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/errqueue.h:
-
-/Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/errno.h:
-
-/Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/errno.h:
-
-/Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm/errno.h:
-
-/Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm-generic/errno.h:
-
-/Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm-generic/errno-base.h:
-
-/Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/netdb.h:
-
 /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/netinet/in.h:
 
 /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/endian.h:
@@ -217,6 +207,22 @@ obj/local/armeabi/objs/tracert/tracepath.o: jni/tracert/tracepath.c \
 
 /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/netinet/in6.h:
 
+/Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/netinet/icmp6.h:
+
+/Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/errqueue.h:
+
+/Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/errno.h:
+
+/Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/errno.h:
+
+/Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm/errno.h:
+
+/Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm-generic/errno.h:
+
+/Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/asm-generic/errno-base.h:
+
+/Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/netdb.h:
+
 /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/resolv.h:
 
 /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/param.h:
@@ -230,3 +236,7 @@ obj/local/armeabi/objs/tracert/tracepath.o: jni/tracert/tracepath.c \
 /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/uio.h:
 
 /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/arpa/inet.h:
+
+/Users/caojianbo/AndroidGame/Traceroute/app/src/main/jni/tracert/local.h:
+
+/Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/android/log.h:

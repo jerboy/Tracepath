@@ -1,5 +1,5 @@
-obj/local/armeabi/objs/traceroute6/traceroute6.o: \
- jni/traceroute6/traceroute6.c \
+/Users/caojianbo/AndroidGame/Traceroute/app/src/main/obj/local/armeabi/objs/traceroute6/traceroute6.o: \
+ /Users/caojianbo/AndroidGame/Traceroute/app/src/main/jni/traceroute6/traceroute6.c \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/param.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/limits.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/cdefs.h \
@@ -94,7 +94,7 @@ obj/local/armeabi/objs/traceroute6/traceroute6.o: \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/alloca.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/strings.h \
  /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/memory.h \
- jni/traceroute6/SNAPSHOT.h
+ /Users/caojianbo/AndroidGame/Traceroute/app/src/main/jni/traceroute6/SNAPSHOT.h
 
 /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/param.h:
 
@@ -284,4 +284,4 @@ obj/local/armeabi/objs/traceroute6/traceroute6.o: \
 
 /Users/caojianbo/DEV/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/memory.h:
 
-jni/traceroute6/SNAPSHOT.h:
+/Users/caojianbo/AndroidGame/Traceroute/app/src/main/jni/traceroute6/SNAPSHOT.h:

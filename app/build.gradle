@@ -4,6 +4,13 @@ android {
     compileSdkVersion 24
     buildToolsVersion "24.0.2"
 
+    sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs = ["src/main/libs"]
+        }
+    }
+
     defaultConfig {
         applicationId "util.taptap.com.traceroute"
         minSdkVersion 16
