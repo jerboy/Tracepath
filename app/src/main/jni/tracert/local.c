@@ -6,6 +6,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <errno.h>
+#include <netdb.h>
+#include <arpa/inet.h>
 
 
 
@@ -34,6 +36,36 @@ JNIEXPORT void JNICALL beginTrace(JNIEnv *env, jobject object, jstring path){
 
     jboolean tmp = 1;
     const char * domin = (*env)->GetStringUTFChars(env, path, &tmp);
+
+    struct hostent* host = gethostbyname(domin);
+    if(host){
+        notifyUpdateToJava("To %s ",  host->h_name);
+
+        for (;;){
+            if (*host->h_aliases){
+                notifyUpdateToJava("(%s )",  *host->h_aliases);
+                host->h_aliases++;
+            } else {
+                break;
+            }
+        }
+
+        for (;;){
+           if (*host->h_addr_list){
+               notifyUpdateToJava("(%s )",  inet_ntoa(*(struct in_addr*)(*host->h_addr_list)));
+               host->h_addr_list++;
+           } else {
+               break;
+           }
+        }
+
+//        notifyUpdateToJava(" %s ",  inet_ntoa(*(struct in_addr*)(host->h_addr_list[1])));
+        notifyUpdateToJava("\n");
+    } else {
+        notifyUpdateToJava("Net error! %s\n", strerror(errno));
+        notifyEnd();
+    }
+
     LOGD(domin);
     char * ret[] = {"tracepath", domin};
     traceroute(2, ret);
